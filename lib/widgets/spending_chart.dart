@@ -27,10 +27,14 @@ class SpendingChart extends StatelessWidget {
       );
 
     return Card(
-      margin: EdgeInsets.all(8.0),
+      margin: EdgeInsets.all(30.0),
       elevation: 2.0,
-      shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(10.0)
+      shape: BeveledRectangleBorder(
+        borderRadius: BorderRadius.circular(10.0),
+        side: BorderSide(
+          color: Colors.black26, 
+          width: 2.0
+        )
       ),
       child: Container(
         padding: EdgeInsets.all(16.0),
@@ -45,23 +49,23 @@ class SpendingChart extends StatelessWidget {
                       category,
                       PieChartSectionData(
                         color: getCategoryColor(category),
-                        radius: 100.0,
+                        radius: 150.0,
                         title: '\$${amountSpent.toStringAsFixed(2)}',
                         value: amountSpent,
                       ),
                     ))
                     .values
                     .toList(),
-                  sectionsSpace: 0,
+                  sectionsSpace: 1,
                 ),
               ),
             ),
             SizedBox(
-              height: 20.0,
+              height: 10.0,
             ),
             Wrap(
-              spacing: 8.0,
-              runSpacing: 8.0,
+              spacing: 5.0,
+              runSpacing: 5.0,
               children: spending.keys
                 .map((category) => _Indicator(
                   color: getCategoryColor(category),
@@ -92,8 +96,8 @@ class _Indicator extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         Container(
-          height: 16.0,
-          width: 16.0,
+          height: 10.0,
+          width: 10.0,
           color: color,
         ),
         SizedBox(

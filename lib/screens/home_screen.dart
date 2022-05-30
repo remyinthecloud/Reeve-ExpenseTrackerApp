@@ -105,11 +105,11 @@ class _HomeScreenState extends State<HomeScreen> {
 Color getCategoryColor(String category) {
   switch (category) {
     case 'Bills':
-      return Colors.red[300]!;
+      return Colors.yellowAccent[400]!;
     case 'Food':
-      return Colors.blue[300]!;
+      return Colors.purpleAccent[400]!;
     case 'Investments':
-      return Colors.green[300]!;
+      return Colors.lightGreenAccent[700]!;
     default:
       return Colors.deepOrange[300]!;
   }
