@@ -20,6 +20,12 @@ samples, guidance on mobile development, and a full API reference.
 
 ## Walkthrough for my first Flutter App: Reeve - Expense Tracker App
 
+
+●	Implemented the tracking system using “NOTION API” with Postman (API testing, POST method) to query a database table of expenses from notion to the app.
+●	Designed the complete UI for the welcome page and spending chart.
+●	Formulated a refresh functionality when sliding the page down inside the app that updates as the database on notion does.
+
+
 https://user-images.githubusercontent.com/102815890/171210437-c0814e8e-3553-44b5-8a1a-0600a8aea4a3.mov
 
 - This clip shows the welcome screen and home screen. Also, shows how the app works with the notion API.
